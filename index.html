@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080707">
+<title>Иван Филипов | Официален сайт</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#080707;color:white;font-family:Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 50% 20%,#650000,transparent 55%),radial-gradient(ellipse at 90% 90%,#400000,transparent 45%),#080707}
+#particles{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:-1}
+.particle{position:absolute;width:3px;height:3px;background:#ff2020;border-radius:50%;box-shadow:0 0 15px red;animation:float linear infinite}
+@keyframes float{from{transform:translateY(110vh);opacity:0}to{transform:translateY(-10vh);opacity:1}}
+nav{padding:23px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ffffff15}
+.logo{font-size:23px;font-weight:900;letter-spacing:4px}
+.logo span,h1 span,.section-title span,footer span{color:#ff2020}
+.status{color:#ff4545;font-size:10px;letter-spacing:2px;border:1px solid #ff303055;padding:10px 15px;border-radius:30px}
+.hero{min-height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:50px 20px}
+.tag{color:#ff4444;letter-spacing:5px;font-size:11px;margin-bottom:30px}
+.photo{width:230px;height:280px;padding:5px;border-radius:25px;background:linear-gradient(135deg,#ff7777,#e00000,#450000);box-shadow:0 0 40px #ff000077;animation:photo 4s infinite ease-in-out}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:center 25%;border-radius:21px;display:block}
+@keyframes photo{50%{transform:translateY(-12px);box-shadow:0 0 65px #ff000099}}
+h1{font-size:clamp(35px,8vw,65px);margin-top:35px;letter-spacing:2px}
+.subtitle{color:#aaa;margin-top:15px;font-size:12px;letter-spacing:4px}
+.description{color:#aaa;max-width:430px;line-height:1.9;font-size:14px;margin:25px auto 35px}
+.buttons{display:flex;justify-content:center;gap:15px;flex-wrap:wrap}
+.btn{display:inline-block;padding:17px 27px;border-radius:12px;text-decoration:none;font-size:12px;font-weight:900;letter-spacing:1px;transition:.3s}
+.primary{background:linear-gradient(135deg,#ff3333,#a00000);color:white;box-shadow:0 0 25px #ff000055}
+.primary:hover{transform:translateY(-5px) scale(1.05);box-shadow:0 0 45px red}
+.secondary{color:white;border:1px solid #ffffff40}
+.secondary:hover{border-color:red;color:#ff4444}
+.section{max-width:850px;margin:auto;padding:80px 22px}
+.section-title{text-align:center;font-size:26px;margin-bottom:35px}
+.card{background:linear-gradient(145deg,#1c1010,#0b0909);border:1px solid #ff303033;padding:35px 25px;border-radius:20px;text-align:center;box-shadow:0 15px 50px #0008}
+.card h2{color:#ff3030;margin-bottom:18px}
+.card p{color:#aaa;line-height:1.9;font-size:14px}
+.instagram{margin-top:25px;padding:30px 20px;border:1px solid #ff303044;border-radius:20px;text-align:center;background:#ff20200b}
+.instagram h2{font-size:20px;margin-bottom:15px}
+.instagram p{color:#aaa;font-size:13px;margin-bottom:25px}
+footer{padding:35px 15px;text-align:center;border-top:1px solid #ffffff15;color:#666;font-size:11px;letter-spacing:2px}
+.reveal{opacity:0;transform:translateY(30px);transition:1s}
+.reveal.show{opacity:1;transform:translateY(0)}
+@media(max-width:500px){.photo{width:210px;height:260px}.buttons{flex-direction:column;width:100%;max-width:310px}.btn{width:100%}}
+</style>
+</head>
+<body>
+<div id="particles"></div>
+<nav>
+<div class="logo">ИВАН<span>.</span></div>
+<div class="status">● ОФИЦИАЛЕН ПРОФИЛ</div>
+</nav>
+
+<section class="hero">
+<div class="tag">ДОБРЕ ДОШЛИ В МОЯ СВЯТ</div>
+
+<div class="photo">
+<img src="data:image/jpeg;base64,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" alt="Иван Филипов">
+</div>
+
+<h1>ИВАН <span>ФИЛИПОВ</span></h1>
+<div class="subtitle">ЛИЧЕН ПРОФИЛ • ОФИЦИАЛЕН САЙТ</div>
+
+<p class="description">
+Добре дошли в моя официален сайт!
+Тук ще откриете повече за мен и моето
+присъствие в социалните мрежи.
+Последвайте ме и останете свързани!
+</p>
+
+<div class="buttons">
+<a class="btn primary" href="https://www.instagram.com/ivan_filipov24/" target="_blank">
+ПОСЛЕДВАЙ МЕ В INSTAGRAM ↗
+</a>
+<a class="btn secondary" href="#about">РАЗГЛЕДАЙ ОЩЕ ↓</a>
+</div>
+</section>
+
+<section class="section reveal" id="about">
+<h2 class="section-title">ЗА <span>МЕН</span></h2>
+<div class="card">
+<h2>ИВАН ФИЛИПОВ</h2>
+<p>Това е моят официален личен сайт. Благодаря на всеки, който е тук и подкрепя моето развитие!</p>
+</div>
+
+<div class="instagram">
+<h2>НЕКА ОСТАНЕМ СВЪРЗАНИ</h2>
+<p>Открий ме в Instagram и стани част от моята общност.</p>
+<a class="btn primary" href="https://www.instagram.com/ivan_filipov24/" target="_blank">
+@IVAN_FILIPOV24 ↗
+</a>
+</div>
+</section>
+
+<footer>
+© 2026 <span>ИВАН ФИЛИПОВ</span> • ВСИЧКИ ПРАВА ЗАПАЗЕНИ
+</footer>
+
+<script>
+const area=document.getElementById("particles");
+for(let i=0;i<40;i++){
+ const p=document.createElement("div");
+ p.className="particle";
+ p.style.left=Math.random()*100+"%";
+ p.style.animationDuration=(5+Math.random()*10)+"s";
+ p.style.animationDelay=(-Math.random()*12)+"s";
+ area.appendChild(p);
+}
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(entry=>{
+  if(entry.isIntersecting)entry.target.classList.add("show");
+ });
+},{threshold:.15});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
